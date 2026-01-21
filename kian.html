@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name='viewport' content='width=320' />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Secret Mission file#3<3</title>
+<body>
+    <div class="ost-multi-header">
+    <div class="w3-container w3-center w3-animate-zoom">
+    <div class="wrapper">
+        <div class="container">
+            <p id="question"><span>Neth ayaw na og sulat neth di mana makatabang nimo oi</span></p>
+            <button class="btn" id="Sige"><b>Sige</b></button>
+            <button class="btn" id="Magsulat diay ko"><b>Magsulat diay ko</b></button>
+        </div>
+    </div> 
+</body>
+<script>
+    const noBtn = document.getElementById('Magsulat diay ko');
+    const yesBtn = document.getElementById('Sige');
+    const ques = document.getElementById('question');
+    let btn = document.getElementById('btn');
+        let position;
+        noBtn.addEventListener('mouseover',() =>{
+        let rand = Math.floor(Math.random() * (500 - 100) + 1);
+        let rand2 = Math.floor(Math.random() * (-300 - 100) + 1);
+        noBtn.style.transform = "translate("+rand+"px,"+rand2+"px)";
+        });
+    yesBtn.addEventListener("click",()=>{
+        ques.innerHTML = "Good boy HAHAHA ana jud neth"
+    })
+</script>
+<div>
+    <p1>Created by Kian</p1>
+</div>
+</html>
